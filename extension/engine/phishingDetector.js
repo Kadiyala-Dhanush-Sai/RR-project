@@ -88,7 +88,7 @@ function detectPhishing(url) {
 
     console.log("FINAL RISK:", finalRisk);
 
-    const THRESHOLD = 0;
+    const THRESHOLD = 50;
 
     if (finalRisk >= THRESHOLD) {
         chrome.runtime.sendMessage({

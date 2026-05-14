@@ -1,0 +1,59 @@
+{
+    "manifest_version": 3,
+    "name": "Catch Me If You Can",
+    "version": "1.0",
+    "description": "Real-Time Phishing Detection using Random Forest ML",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage"
+    ],
+
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+
+            "js": [
+
+                "engine/featureExtractor.js",
+                
+                "engine/randomForestModel.js",
+                "engine/svmModel.js",
+                "engine/logisticRegressionModel.js",
+                "engine/decisionTreeModel.js",
+
+                "engine/phishingDetector.js",
+                "content.js"
+            ],
+
+            "run_at": "document_idle"
+        }
+    ],
+
+    "web_accessible_resources": [
+
+        {
+            "resources": [
+
+                "warning/warning.html",
+                "warning/warning.css",
+                "warning/warning.js",
+                "training/training.html"
+            ],
+
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}

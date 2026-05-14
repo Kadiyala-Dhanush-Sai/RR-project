@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cyber Phishing Scanner</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <h2>CYBER PHISHING SCANNER</h2>
+
+    <p class="label">Current Website</p>
+
+    <div id="url">
+        Loading...
+    </div>
+
+    <div class="algoContainer">
+
+        <div class="algoCard">
+
+            <div class="algoName">
+                Random Forest
+            </div>
+
+            <div
+                class="algoScore"
+                id="rfScore"
+            >
+                0.000%
+            </div>
+
+        </div>
+
+        <div class="algoCard">
+
+            <div class="algoName">
+                SVM
+            </div>
+
+            <div
+                class="algoScore"
+                id="svmScore"
+            >
+                0.000%
+            </div>
+
+        </div>
+
+        <div class="algoCard">
+
+            <div class="algoName">
+                Logistic Regression
+            </div>
+
+            <div
+                class="algoScore"
+                id="logisticScore"
+            >
+                0.000%
+            </div>
+
+        </div>
+
+        <div class="algoCard">
+
+            <div class="algoName">
+                Decision Tree
+            </div>
+
+            <div
+                class="algoScore"
+                id="decisionTreeScore"
+            >
+                0.000%
+            </div>
+
+        </div>
+
+    </div>
+
+    <div
+        id="finalRisk"
+        class="finalRisk"
+    >
+        FINAL RISK: 0.000%
+    </div>
+
+    <div id="result">
+        SAFE WEBSITE
+    </div>
+
+    <div id="reasons"></div>
+
+    <div class="tips">
+
+        <h4>Safety Tips</h4>
+
+        <ul>
+
+            <li>Check HTTPS</li>
+
+            <li>Verify domain spelling</li>
+
+            <li>Avoid unknown links</li>
+
+        </ul>
+
+    </div>
+    <hr />
+    <a href="../training/training.html">
+        <button id="trainingBtn">
+            Phishing Training
+        </button>
+    </a>
+
+
+    <script src="popup.js"></script>
+
+</body>

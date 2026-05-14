@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phishing Awareness</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #020617;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 26px;
+      width: 560px;
+      box-shadow: 0 0 28px rgba(239, 68, 68, 0.35);
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ef4444;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .section {
+      margin-bottom: 18px;
+    }
+
+    .point {
+      display: flex;
+      gap: 12px;
+      background: #020617;
+      border: 1px solid #1e293b;
+      padding: 14px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .text strong {
+      color: #fca5a5;
+    }
+
+    .tip {
+      background: #0f172a;
+      border-left: 4px solid #38bdf8;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .btn {
+      margin-top: 18px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      background: #ef4444;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #dc2626;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="title">🎓 Phishing Awareness Alert</div>
+
+    <div class="section">
+      <div class="point">
+        <span class="icon">🎭</span>
+        <div class="text">
+          <strong>Impersonation</strong><br>
+          Phishing attacks often pretend to be trusted organizations like banks,
+          delivery services, or government portals.
+        </div>
+      </div>
+
+      <div class="point">
+        <span class="icon">⚠️</span>
+        <div class="text">
+          <strong>Urgency & Fear Tactics</strong><br>
+          Messages may pressure users with threats like account suspension
+          or limited-time actions.
+        </div>
+      </div>
+
+      <div class="point">
+        <span class="icon">🔗</span>
+        <div class="text">
+          <strong>Malicious Links</strong><br>
+          Phishing links redirect users to fake login pages designed
+          to steal credentials.
+        </div>
+      </div>
+
+      <div class="point">
+        <span class="icon">🧾</span>
+        <div class="text">
+          <strong>Requests for Sensitive Data</strong><br>
+          Legitimate organizations never ask for passwords, OTPs,
+          or banking details via links.
+        </div>
+      </div>
+
+      <div class="point">
+        <span class="icon">🛡️</span>
+        <div class="text">
+          <strong>Security Engine Detection</strong><br>
+          This content is shown because multiple detection techniques
+          identified phishing behavior.
+        </div>
+      </div>
+    </div>
+
+    <div class="tip">
+      💡 <strong>Stay Safe:</strong><br>
+      Always verify the sender, check the website carefully, and avoid clicking
+      unknown links. When in doubt, close the page.
+    </div>
+
+    <button class="btn" id="closeBtn">
+      Go Back Safely
+    </button>
+    </div>
+    <script src="training.js"></script>
+</body>
+</html>

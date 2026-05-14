@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Security Warning</title>
+    <link rel="stylesheet" href="warning.css" />
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="warning-box">
+            <h1>⚠ SECURITY ALERT</h1>
+            <p class="subtitle">
+                Threat Level: <span id="riskScore" class="danger">Loading...</span>
+            </p>
+
+            <div class="details">
+                <p>Entering this site may result in:</p>
+                <ul>
+                    <li>Credential theft</li>
+                    <li>Malware installation</li>
+                    <li>Financial loss</li>
+                </ul>
+            </div>
+
+            <div class="buttons">
+                <button id="backBtn"class="back-btn">⬅ Go Back</button>
+                <button id="continueBtn" class="continue-btn">⚠ Continue Anyway</button>
+
+            </div>
+
+            <p class="footer">
+                Powered by <strong>Catch Me If You Can</strong>
+            </p>
+        </div>
+    </div>
+    <script src="warning.js"></script>
+</body>
+</html>
